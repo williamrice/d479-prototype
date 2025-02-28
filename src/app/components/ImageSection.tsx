@@ -30,7 +30,7 @@ const ImageSection = ({
       }
       className="flex flex-col md:flex-row p-4"
     >
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col">
         <Image
           src={image}
           alt={title}
@@ -39,12 +39,12 @@ const ImageSection = ({
           className="border-4 border-melon shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300"
         />
         <p
-          className="creds text-sm text-center"
+          className="creds text-sm"
           dangerouslySetInnerHTML={{ __html: imageCreds }}
         />
       </div>
 
-      <div className="p-4 space-y-2 flex-1">
+      <div className="p-4 space-y-2 flex-1 flex flex-col">
         <h2 className="text-2xl text-dark-green">{title}</h2>
         <p>{content}</p>
         <SecondaryButton buttonText={buttonText} buttonLink={buttonLink} />

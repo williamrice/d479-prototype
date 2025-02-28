@@ -9,7 +9,7 @@ interface SecondaryButtonProps {
 const SecondaryButton = ({ buttonText, buttonLink }: SecondaryButtonProps) => {
   return (
     <Link
-      className="bg-md-green px-4 py-2 rounded-md font-bold hover:scale-105 transition-transform duration-300 mt-2 text-white max-w-fit flex justify-center"
+      className="bg-melon px-4 py-2 rounded-md font-bold hover:scale-105 transition-transform duration-300 mt-2 text-white max-w-fit flex justify-center"
       href={buttonLink}
     >
       {buttonText}
