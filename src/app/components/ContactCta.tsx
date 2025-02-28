@@ -1,5 +1,4 @@
 import React from "react";
-import SecondaryButton from "./SecondaryButton";
 import PrimaryButton from "./PrimaryButton";
 
 const ContactCta = () => {
