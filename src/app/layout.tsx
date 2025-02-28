@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NavMenu from "./components/NavMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +26,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-[100vh]`}
       >
+        <NavMenu />
         {children}
       </body>
+      {/* <p>
+        Header image Photo by{" "}
+        <a href="https://unsplash.com/@vjpedro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Pedro Bariak
+        </a>{" "}
+        on{" "}
+        <a href="https://unsplash.com/photos/green-palm-trees-near-swimming-pool-during-daytime-lVRolxDY5q0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+          Unsplash
+        </a>
+      </p> */}
     </html>
   );
 }
