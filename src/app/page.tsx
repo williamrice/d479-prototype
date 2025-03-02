@@ -1,7 +1,7 @@
-import JumboTron from "./components/JumboTron";
-import ImageSection from "./components/ImageSection";
-import PageIntro from "./components/PageIntro";
-import ContactCta from "./components/ContactCta";
+import JumboTron from "../components/JumboTron";
+import ImageSection from "../components/ImageSection";
+import PageIntro from "../components/PageIntro";
+import ContactCta from "../components/ContactCta";
 
 export default function Home() {
   const imageSectionContent = [
