@@ -55,7 +55,7 @@ const FAQ = () => {
   // FAQ Data embedded directly in the component
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div id="faq" className="min-h-screen bg-gray-100 py-8">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Frequently Asked Questions
       </h1>

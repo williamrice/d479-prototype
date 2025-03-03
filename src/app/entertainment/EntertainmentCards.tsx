@@ -4,8 +4,9 @@ import React from "react";
 interface EntertainmentCard {
   id: number;
   name: string;
-  image: string; // URL or path to the image
+  image: string;
   activityType: string;
+  imageCreds: string;
 }
 
 const entertainmentData: EntertainmentCard[] = [
@@ -14,6 +15,8 @@ const entertainmentData: EntertainmentCard[] = [
     name: "Cultural Exploration",
     image: "/attractions.jpg",
     activityType: "Visit the local history museum, art galleries",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 2,
@@ -21,6 +24,8 @@ const entertainmentData: EntertainmentCard[] = [
     image: "/attractions.jpg",
     activityType:
       "Chartered fishing tours, snorkeling, zip-lining in the rainforest, helicopter rides",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 3,
@@ -28,12 +33,16 @@ const entertainmentData: EntertainmentCard[] = [
     image: "/attractions.jpg",
     activityType:
       "Visit pubs including a microbrewery, dancing at a new dance club, seeing a movie",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 4,
     name: "Fun & Games",
     image: "/attractions.jpg",
     activityType: "Playing at an arcade, bowling",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
 ];
 
@@ -46,6 +55,7 @@ const EntertainmentCards = () => {
           title={ent.name}
           subtitle={ent.activityType}
           imagePath={ent.image}
+          imageCreds={ent.imageCreds}
         />
       ))}
     </div>

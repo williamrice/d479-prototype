@@ -22,7 +22,7 @@ const TransportationPage = () => {
         </h2>
         <ImageSection
           title="Cruise Ship"
-          content="arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week"
+          content="Arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week"
           image="/transportation.jpg"
           imageCreds="<p>todo</p>"
           buttonLink="#"

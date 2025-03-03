@@ -4,72 +4,90 @@ import React from "react";
 interface RestaurantCard {
   id: number;
   name: string;
-  image: string; // URL or path to the image
+  image: string;
   cuisineType: string;
+  imageCreds: string;
 }
 const restaurantData: RestaurantCard[] = [
-  // Local Fish and Rice (5 restaurants)
   {
     id: 1,
     name: "Ocean Catch",
     image: "/dining.jpg",
     cuisineType: "Local Fish and Rice",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 2,
     name: "Sea Harvest",
     image: "/dining.jpg",
     cuisineType: "Local Fish and Rice",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 3,
     name: "Fish Haven",
     image: "/dining.jpg",
     cuisineType: "Local Fish and Rice",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 4,
     name: "Rice & Reef",
     image: "/dining.jpg",
     cuisineType: "Local Fish and Rice",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 5,
     name: "Coastal Plate",
     image: "/dining.jpg",
     cuisineType: "Local Fish and Rice",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
-  // American-Style Meals (3 restaurants)
   {
     id: 6,
     name: "Burger Bay",
     image: "/dining.jpg",
     cuisineType: "American",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 7,
     name: "Diner Dock",
     image: "/dining.jpg",
     cuisineType: "American",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 8,
     name: "Grill Shore",
     image: "/dining.jpg",
     cuisineType: "American",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
-  // Pan-Asian Cuisine (2 restaurants)
   {
     id: 9,
     name: "Asia Tide",
     image: "/dining.jpg",
     cuisineType: "Pan-Asian",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
   {
     id: 10,
     name: "Oriental Wave",
     image: "/dining.jpg",
     cuisineType: "Pan-Asian",
+    imageCreds:
+      'Photo by <a href="https://unsplash.com/@outwardboundcr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Outward Bound Costa Rica</a> on <a href="https://unsplash.com/photos/a-couple-of-people-walking-down-a-dirt-road-m7oBPOikS4I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
   },
 ];
 
@@ -82,6 +100,7 @@ const RestaurantCards = () => {
           title={restaurant.name}
           subtitle={restaurant.cuisineType}
           imagePath={restaurant.image}
+          imageCreds={restaurant.imageCreds}
         />
       ))}
     </div>

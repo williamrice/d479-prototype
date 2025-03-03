@@ -34,6 +34,11 @@ const Footer = () => {
               How to travel
             </Link>
           </li>
+          <li>
+            <Link href={"/contact#faq"} className="hover:text-mango">
+              FAQ
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="flex flex-col justify-between items-center gap-1">
